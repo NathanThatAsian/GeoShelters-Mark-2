@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>GeoShelters | Home</title>
+  </head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Overpass');
+</style>
+
+<style>
+  body{
+  font-family: 'Overpass', sans-serif;
+  padding:0;
+  margin:0;
+  }
+
+.slidey{
+  width:100%;
+  margin:auto;
+}
+
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.button_1{
+  height:38px;
+  background:#d35400;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+
+.dark{
+  padding:15px;
+  background:#35424a;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+header{
+  background:#35424a;
+  color:#ffffff;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.button_1{
+  height:38px;
+  background:#d35400;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+
+.dark{
+  padding:15px;
+  background:#35424a;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+header{
+  background:#35424a;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#d35400 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#d35400;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+#showcase h1{
+  margin-top:100px;
+  font-size:55px;
+  margin-bottom:10px;
+}
+
+#showcase p{
+  font-size:20px;
+}
+
+#newsletter{
+  padding:15px;
+  color:#ffffff;
+  background:#35424a
+}
+
+#newsletter h1{
+  float:left;
+}
+
+#newsletter form {
+  float:right;
+  margin-top:15px;
+}
+
+#newsletter input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+
+#boxes{
+  margin-top:20px;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:10px;
+}
+
+#boxes .box img{
+  width:290px;
+}
+
+aside#sidebar{
+  float:right;
+  width:30%;
+  margin-top:10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  padding:5px;
+}
+
+/* Main-col */
+article#main-col{
+  float:left;
+  width:65%;
+}
+
+ul#services li{
+  list-style: none;
+  padding:20px;
+  border: #cccccc solid 0px;
+  margin-bottom:5px;
+  background:#white;
+}
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  background-color:#d35400;
+  text-align: center;
+}
+
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #showcase h1{
+    margin-top:40px;
+  }
+
+  #newsletter button, .quote button{
+    display:block;
+    width:100%;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
+}
+
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">  Geo</span> Shelters</h1>
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="goals.html">Goals</a></li>
+            <li><a href="admins.html">Admins</a></li>
+            <li><a href="map.html">Map</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+<div class="slidey">
+  <img class="mySlides" src="https://cff2.earth.com/uploads/2017/07/24182124/Measuring-soil-moisture-can-help-predict-wildfires--850x500.jpg" style="width:100%">
+  <img class="mySlides" src="https://cff2.earth.com/uploads/2017/04/17102914/shutterstock_557763517-850x500.jpg" style="width:100%">
+  <img class="mySlides" src="https://www2.chubb.com/_global-assets/images/emv2-articles_4.2-img02.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4500); // Change image every 2 seconds
+}
+</script>
+
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>Recieve the latest news</h1>
+        <form>
+          <input type="email" placeholder="Enter Your Email...">
+          <button type="submit" class="button_1">Subscribe</button>
+        </form>
+      </div>
+    </section>
+<ul id="services">
+            <li>
+              <h1>About Us</h1>
+              <p>We are 3 students whose main goal is to help locals in Sonoma County in an event of a natural disaster. Our website, Geo Shelters, is a simulation of all the shelters that helped Sonoma County to recover from the fire. We have chosen 25 shelters to be represented on the map. Each shelter has information regarding capacity, assets offered, and help needed. A special feature of our website is the ability to see the amount of people at a shelter at any given time, which is updated by admins of each shelter.</p>
+              <p>The recent Fire taught us a lot about how we, as residents of Sonoma County, need to be ready to respond to any natural disaster that may come in the future. Our website was created so that anyone can easily locate shelters in their area.</p>
+            </li>
+    <footer>
+      <p>Testing Site</p>
+    </footer>
+  </body>
+</html>

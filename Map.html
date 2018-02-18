@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width">
+  <title>GeoShelters | Map</title>
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Overpass');
+</style>
+
+<style>
+  body{
+  font-family: 'Overpass', sans-serif;
+  padding:0;
+  margin:0;
+  }
+
+.map{
+	width:98.5%;
+	margin:auto;
+}
+
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.button_1{
+  height:38px;
+  background:#d35400;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+
+.dark{
+  padding:15px;
+  background:#35424a;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+header{
+  background:#35424a;
+  color:#ffffff;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.button_1{
+  height:38px;
+  background:#d35400;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+
+.dark{
+  padding:15px;
+  background:#35424a;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+header{
+  background:#35424a;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#d35400 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .highlight, header .current a{
+  color:#d35400;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+#showcase h1{
+  margin-top:100px;
+  font-size:55px;
+  margin-bottom:10px;
+  margin:auto;
+  text-align: center;
+}
+
+#showcase p{
+  font-size:20px;
+  margin:auto;
+  text-align: center;
+}
+
+#newsletter{
+  padding:15px;
+  color:#ffffff;
+  background:#35424a
+}
+
+#newsletter h1{
+  text-align:center;
+}
+
+#boxes{
+  margin-top:20px;
+  text-align: center;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:10px;
+}
+
+#boxes .box img{
+  width:290px;
+}
+
+aside#sidebar{
+  float:right;
+  width:30%;
+  margin-top:10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  padding:5px;
+}
+
+/* Main-col */
+article#main-col{
+  float:left;
+  width:65%;
+}
+
+ul#services li{
+  list-style: none;
+  padding:20px;
+  margin-bottom:5px;
+  background:#white;
+}
+
+footer{
+  padding:20px;
+  margin-top:20px;
+  color:#ffffff;
+  background-color:#d35400;
+  text-align: center;
+}
+
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #showcase h1{
+    margin-top:40px;
+    text-align: center;
+  }
+</style>
+
+<body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">  Geo</span> Shelters</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="goals.html">Goals</a></li>
+            <li><a href="admins.html">Admins</a></li>
+            <li class="current"><a href="map.html">Map</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+	<section id="showcase">
+      <div class="map">
+      <iframe width="100%" height="450px" src="https://maphub.net/embed/24509" frameborder="" allowfullscreen></iframe>
+      </div>
+    </section>
+   <section id="newsletter">
+      <div class="container">
+        <h1>Map Features</h1>
+      </div>
+    </section>
+        <section id="boxes">
+      <div class="container">
+        <div class="box">
+          <img src="https://i.imgur.com/c63Hll2.png">
+          <h3>Live Shelter Counts</h3>
+          <p>Providing information regarding the amount of people each shelter, at any given time.</p>
+        </div>
+        <div class="box">
+          <img src="https://i.imgur.com/TS2eHxW.png">
+          <h3>Geo Location</h3>
+          <p>Track your nearest shelter and all of its information, including: address, city, building occupied, and capacity.</p>
+        </div>
+        <div class="box">
+          <img src="https://i.imgur.com/QsafDYq.png">
+          <h3>Easily Accessible</h3>
+          <p>Our site is very user-friendly, with information being accessed by simply clicking on a shelter.</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Testing Site</p>
+    </footer>
+</body>
+</html>
